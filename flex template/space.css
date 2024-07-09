@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+}
+
+nav{
+    width: 100%;
+    height: 96px;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+hr{
+    width: 30%;
+    opacity: 25%;
+    position: absolute;
+    left: 180px;
+    z-index: 3
+}
+
+.pages {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    width: 65%;
+    height: 96px;
+    background-color: rgba(51, 58, 65, 0.4);
+    backdrop-filter: blur(15px);
+    z-index: 1;
+}
+
+.pages p {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2.7px;
+    font-size: 16px;
+    color: white;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#burger{
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    left: -100%;
+    transition: 0.2s ease-in-out;
+}
+
+.active{
+    left: 0;
+}
+
+.pages p:hover {
+    border-bottom: 3px solid white;
+}
+
+b{
+    margin-right: 10px;
+}
+
+body{
+    background-image: url(background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    max-width: 1100px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px auto;
+    padding-left: 20px;
+}
+
+.texts {
+    color: white;
+    width: 42%;
+    height: auto;
+}
+
+h1 {
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: 'Bellefair';
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.firstline{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 4.72px;
+    margin-bottom: 25px;
+    color: #d0d6f9;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Barlow';
+    line-height: 32px;
+    color: #d0d6f9;
+}
+
+#explore {
+    width: 274px;
+    height: 274px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+#explore h2 {
+    font-size: 32px;
+    font-family: 'Bellefair';
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#pick {
+    margin-top: 110px;
+    margin-left: 170px;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-weight: 300;
+    letter-spacing: 2.7px;
+  }
+
+  #pick b {
+    color: grey;
+    margin-right: 22px;
+  }
+
+  .main {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    /*background-color: blueviolet;*/
+    width: 83%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    line-height: 36px;
+  }
+
+  #moondata {
+    width: 45%;
+    height: 550px;
+    margin-bottom: 20px;
+  }
+
+  #moontitle {
+    width: 50%;
+    height: auto;
+    color: white;
+    font-size: 100px;
+    font-weight: 100;
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  #moondescript {
+    line-height: 36px;
+    font-size: 18px;
+    font-family: 'Barlow';
+    font-weight: 100;
+    color: #d0d6f9;
+    width: 80%;
+    border-bottom: 1px solid rgb(50, 68, 100, 0.7);
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+  }
+
+  #moondistance,
+  #moontravel {
+    color: white;
+    font-size: 28px;
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+  }
+
+  #planetselect {
+    width: auto;
+    gap: 35px;
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-weight: 100;
+    color: #d0d6f9;
+    margin-bottom: 80px;
+    cursor: pointer;
+  }
+
+  .orbs:hover {
+    color: white;
+    font-weight: 300;
+    border-bottom: 3px solid white;
+  }
+
+  .orbs:active {
+    color: white;
+    font-weight: 300;
+    border-bottom: 3px solid white;
+  }
+
+  .statsbox {
+    width: 430px;
+    display: flex;
+  }
+
+  .stats p {
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2px;
+    width: 215px;
+    color: #d0d6f9;
+  }
+
+@media (max-width: 1420px) {
+    hr{
+        display: none;
+    }
+}
+@media (max-width: 1230px) {
+    .pages{
+        gap: 40px;
+    }
+    main{
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1060px) {
+    .pages p{
+     font-size: 14px;
+     gap: 30px;
+    }
+    b{
+        display: none;
+    }
+}
+@media (max-width: 945px) {
+    body{
+        background-image: url(background-home-tablet.jpg);
+    }
+    .firstline{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 885px) {
+    .texts{
+        text-align: center;
+        width: auto;
+        margin: auto;
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    .texts p{
+        width: 530px;
+        margin: auto;
+    }
+    #explore{
+        width: 242px;
+        height: 242px;
+        margin: auto;
+        margin-top: 165px;
+    }
+    main{
+        display: block;
+        margin-top: 50px;
+        padding-left: 0px;
+    }
+    .pages{
+        width: 75%;
+    }
+}
+@media (max-width: 768px) {
+    .pages{
+        gap: 30px;
+    }
+    .firstline{
+        width: 100%;
+    }
+}
+@media (max-width: 645px) {
+    .pages{
+        display: none;
+    }
+    #burger{
+        display: block;
+        margin-right: 35px;
+    }
+    
+    #logo{
+        margin-left: 30px;
+    }
+    header{
+        height: 100px;
+    }
+    #explore{
+        width: 150px;
+        height: 150px;
+    }
+    #explore h2{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .firstline{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+    .texts p{
+        width: 75%;
+    }
+    .menu{
+        background-color: rgb(40, 56, 73);
+        width: 100%;
+        height: 95vh;
+        text-align: center;
+        position: absolute;
+        top: 0;
+    }
+    .menu p{
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top: 110px;
+        text-transform: uppercase;
+    }
+    .menu-pages p:hover{
+        color: white;
+        font-weight: 700;
+    }
+    .menu a{
+        text-decoration: none;
+    }
+    #close{
+        margin-top: 70px;
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+/*--destnation--*/
+
+@media (max-width: 1270px) {
+    hr{
+      width: 28%;
+    }
+  }
+
+  @media (max-width: 1240px) {
+    .planets{
+      margin-left: 0px;
+    }
+    .main{
+      left: 130px;
+    }
+  }
+
+  @media (max-width: 1140px) {
+    hr{
+      display: none;
+    }
+    
+  }
+
+  @media (max-width: 1100px) {
+    ul b{
+      display: none;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .main{
+      position: unset;
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-top: 80px;
+    }
+    #moondata{
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+    }
+    #planetselect{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+    }
+    #pick{
+      margin-left: 65px;
+    }
+    ul{
+      width: 50%;
+      gap: 30px;
+    }
+    #moontitle{
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+    .statsbox{
+      margin-bottom: 80px;
+    }
+    body{
+      height: auto;
+    }
+    .planets img{
+      width: 285px;
+      height: 285px;
+    }
+    .planets{
+      margin-top: -25px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    ul{
+      width: 57%;
+    }
+    #pick{
+      font-size: 20px;
+    }
+    #moondescript{
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+    }
+    #moontitle{
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #planetselect{
+      gap: 40px;
+
+    }
+  }
+
+  @media (max-width: 730px) {
+    #burger{
+      display: block;
+      margin-right: 25px;
+    }
+    ul{
+      display: none;
+    }
+    nav{
+      width: 100%;
+      position: unset;
+      
+    }
+    #logo{
+      margin-left: 25px;
+    }
+   
+    .planets img{
+      width: 250px;
+      height: 250px;
+    }
+    #pick{
+      margin-top: 20px;
+      text-align: center;
+      margin-left: 0px;
+    }
+    .planets{
+      margin-top: -30px;
+      margin-bottom: 20px;
+    }
+   
+    #moondata{
+      width: 100%;
+    }
+    #moondescript{
+      min-width: 380px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    #moontitle{
+      margin-top: 0px;
+    }
+    .statsbox{
+      width: 300px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 60px;
+    }
+    .stats{
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 445px) {
+    #moondescript{
+      min-width: 320px;
+      font-size: 15px;
+    }
+    #moontitle{
+      margin-top: -35px;
+      font-size: 56px;
+    }
+    #planetselect{
+      font-size: 14px;
+    }
+  }

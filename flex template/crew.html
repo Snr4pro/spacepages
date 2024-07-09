@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="crew.css">
+    <title>Flex Template</title>
+</head>
+
+<body>
+    <div class="allgrids">
+        <div id="logo">
+            <img src="logo.svg">
+            <div class="line"></div>
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html"><li class="active" onclick="borderWhite()"><b>00</b>Home</li></a>
+                <a href="destinations.html">
+                    <li class="active2" onclick="borderWhite2()"><b>01</b>Destination</li>
+                </a>
+                <a href="crew.html"><li class="active3" onclick="borderWhite3()"><b>02</b>Crew</li></a>
+                <a href="tech.html"><li class="active4" onclick="borderWhite4()"><b>03</b>Technology</li></a>
+            </ul>
+            <img src="icon-hamburger.svg" id="burger" width="25px">
+        </nav>
+        <div class="burger-menu">
+            <img src="icon-close.svg" id="closer">
+            <ul>
+                <a href="index.html"><li><b>00</b>Home</li></a>
+                <a href="destinations.html">
+                    <li><b>01</b>Destination</li>
+                </a>
+                <a href="crew.html"><li><b>02</b>Crew</li></a>
+                <a href="tech.html"><li><b>03</b>Technology</li></a>
+            </ul>
+        </div>
+        <div class="topheading"><b>02</b>Meet The Crew</div>
+        <div class="maingrid">
+            <div class="box-one">
+                <div class="selectors-mobile2">
+                    <label for="radio1" class="dial1-mob2" onclick="doug()"></label>
+                    <label for="radio2" class="dial2-mob2" onclick="mark()"></label>
+                    <label for="radio3" class="dial3-mob2" onclick="victor()"></label>
+                    <label for="radio4" class="dial4-mob2" onclick="anoush()"></label>
+                </div>
+                <div class="title"></div>
+                <div class="name"></div>
+                <div class="details"></div>
+                <div class="selectors-mobile">
+                    <label for="radio1" class="dial1-mob" onclick="doug()"></label>
+                    <label for="radio2" class="dial2-mob" onclick="mark()"></label>
+                    <label for="radio3" class="dial3-mob" onclick="victor()"></label>
+                    <label for="radio4" class="dial4-mob" onclick="anoush()"></label>
+                </div>
+                <div class="radios-mobile">
+                    <input type="radio" name="radio-btn" id="radio1-mob" checked>
+                    <input type="radio" name="radio-btn" id="radio2-mob">
+                    <input type="radio" name="radio-btn" id="radio3-mob">
+                    <input type="radio" name="radio-btn" id="radio4-mob">
+                </div>
+            </div>
+            <div class="box-two"></div>
+        </div>
+        <div class="selectors">
+            <label for="radio1" class="dial1" onclick="doug()"></label>
+            <label for="radio2" class="dial2" onclick="mark()"></label>
+            <label for="radio3" class="dial3" onclick="victor()"></label>
+            <label for="radio4" class="dial4" onclick="anoush()"></label>
+        </div>
+        <div class="radios">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+        </div>
+    </div>
+</body>
+<script src="crew.js"></script>
+
+</html>

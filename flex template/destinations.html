@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="destinations.css">
+    <title>Flex Template</title>
+</head>
+
+<body>
+    <div class="allgrids">
+        <div id="logo">
+            <img src="logo.svg">
+            <div class="line"></div>
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html"><li class="active" onclick="borderWhite()"><b>00</b>Home</li></a>
+                <a href="destinations.html">
+                    <li class="active2" onclick="borderWhite2()"><b>01</b>Destination</li>
+                </a>
+                <a href="crew.html"><li class="active3" onclick="borderWhite3()"><b>02</b>Crew</li></a>
+                <a href="tech.html"><li class="active4" onclick="borderWhite4()"><b>03</b>Technology</li></a>
+            </ul>
+            <img src="icon-hamburger.svg" id="burger" width="25px">
+        </nav>
+        <div class="burger-menu">
+            <img src="icon-close.svg" id="closer">
+            <ul>
+                <a href="index.html">
+                    <li><b>00</b>Home</li>
+                </a>
+                <a href="destinations.html">
+                    <li><b>01</b>Destination</li>
+                </a>
+                <a href="crew.html">
+                    <li><b>02</b>Crew</li>
+                </a>
+                <a href="tech.html">
+                    <li><b>03</b>Technology</li>
+                </a>
+            </ul>
+        </div>
+        <div class="topheading"><b>01</b>Pick Your Destination</div>
+        <div class="maingrid">
+            <div class="box-one">
+                <div class="planets"></div>
+            </div>
+            <div class="box-two">
+                <ul>
+                    <li onclick="moon()" id="oneplan">Moon</li>
+                    <li onclick="mars()" id="twoplan">Mars</li>
+                    <li onclick="europa()" id="threeplan">Europa</li>
+                    <li onclick="titan()" id="fourplan">Titan</li>
+                </ul>
+                <div class="title"></div>
+                <div class="details"></div>
+                <div class="stats">
+                    <div class="distance">Avg. Distance</div>
+                    <div class="travel">Est. Travel Time</div>
+                </div>
+                <div class="numbers">
+                    <div class="distanceanswer"></div>
+                    <div class="travelanswer"></div>
+                </div>
+                <div class="statsmobile">
+                    <div class="distance">Avg. Distance</div>
+                    <div class="distancemobile"></div>
+                </div>
+                <div class="numbersmobile">
+                    <div class="travel">Est. Travel Time</div>
+                    <div class="travelmobile"></div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="scripts2.js"></script>
+
+</html>

@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    max-width: 1440px;
+    margin: auto;
+}
+
+.allgrids {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#logo {
+    position: relative;
+    top: 24px;
+    left: 50px;
+    width: 41%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.line {
+    margin-left: 45px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    z-index: 1;
+    opacity: 30%;
+}
+
+nav ul {
+    position: relative;
+    top: -48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    width: 830px;
+    height: 96px;
+    background-color: rgb(97, 97, 97, 0.1);
+    color: #d0d6f9;
+    text-transform: uppercase;
+    z-index: 2;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2.7px;
+    font-size: 16px;
+    backdrop-filter: blur(8px);
+    font-weight: 200;
+}
+
+nav ul li {
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+    color: #d0d6f9;
+}
+
+.active {
+    border-bottom: 3px solid transparent;
+}
+
+.active2 {
+    border-bottom: 3px solid transparent;
+}
+
+.active3 {
+    border-bottom: 3px solid transparent;
+}
+
+.active4 {
+    border-bottom: 3px solid transparent;
+}
+
+.active:hover {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.active2:hover {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.active3:hover {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.active4:hover {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+#oneplan:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+#twoplan:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+#threeplan:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+#fourplan:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+
+.burger-menu {
+    max-width: 100%;
+    height: auto;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    position: absolute;
+    background-color: #000000;
+    top: 0px;
+    z-index: 3;
+    transition: 0.3s;
+}
+
+.burger-menu ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#burger {
+    display: none;
+}
+
+b {
+    margin-right: 10px;
+}
+
+.topheading {
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 4.72px;
+    font-weight: 100;
+    margin-left: 140px;
+    margin-top: -40px;
+}
+
+.topheading b {
+    margin-right: 15px;
+    color: #979797;
+}
+
+.maingrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px;
+}
+
+.box-one,
+.box-two {
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+
+.box-one {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.box-two {
+    color: white;
+}
+
+.box-two ul li {
+    height: 33px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2.7px;
+    color: #d0d6f9;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 100px;
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+}
+
+.details {
+    font-family: 'Barlow';
+    line-height: 32px;
+    color: #d0d6f9;
+    font-size: 18px;
+    width: 450px;
+    margin-top: 25px;
+}
+
+.stats {
+    width: 450px;
+    height: auto;
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 50px;
+}
+
+.distance,
+.travel {
+    font-size: 14px;
+    font-family: 'Barlow Condensed';
+    color: #d0d6f9;
+    text-transform: uppercase;
+    width: 50%;
+    margin-top: 25px;
+    letter-spacing: 2.7px;
+}
+
+.numbers {
+    width: 450px;
+    height: auto;
+    display: flex;
+    margin-top: 15px;
+}
+
+.distanceanswer,
+.travelanswer {
+    font-size: 28px;
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.statsmobile,
+.numbersmobile {
+    display: none;
+}
+
+@media (max-width: 1370px) {
+    .line {
+        display: none
+    }
+}
+
+@media(max-width: 1275px) {
+    nav ul {
+        width: 675px
+    }
+
+    .box-one img {
+        width: 375px;
+        height: 375px;
+        margin-right: 75px;
+    }
+
+    .box-one {
+        justify-content: right;
+    }
+}
+
+@media (max-width: 1160px) {
+    .topheading {
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 1024px) {
+    ul b {
+        display: none;
+    }
+
+    nav ul {
+        width: 450px;
+        gap: 25px;
+        font-size: 14px;
+    }
+
+    .topheading {
+        font-size: 20px;
+    }
+    body {
+        height: 1366px;
+    }
+
+    .details {
+        max-width: 350px;
+    }
+
+    .maingrid {
+        grid-template-columns: 53% 47%;
+    }
+}
+
+@media (max-width: 990px) {
+    .maingrid {
+        grid-template-columns: 13.3% 73.3% 13.3%;
+        max-width: 990px;
+    }
+
+    .box-one {
+        grid-row-start: 1;
+        grid-row-end: 6;
+        grid-column-start: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-one img {
+        margin-right: 0px;
+    }
+
+    .box-two {
+        grid-row-start: 6;
+        grid-row-end: 10;
+        grid-column-start: 2;
+        text-align: center;
+    }
+
+    body {
+        overflow: visible;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    .details,
+    .stats,
+    .numbers {
+        margin: auto;
+        width: 100%;
+    }
+
+    .details {
+        margin-bottom: 45px;
+    }
+
+    .stats,
+    .numbers {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        width: 450px;
+        gap: 25px;
+        font-size: 14px;
+    }
+
+    body {
+        background-image: url(background-destination-tablet.jpg);
+    }
+
+    .title {
+        font-size: 80px;
+    }
+
+    .details {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 651px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        margin-bottom: 55px;
+    }
+
+    #burger {
+        display: block;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    #closer {
+        cursor: pointer;
+    }
+
+    .box-one img {
+        width: 300px;
+        height: 300px;
+    }
+
+    body {
+        height: 1150px;
+    }
+
+    .topheading {
+        font-size: 16px;
+        margin: auto;
+    }
+
+    .burger-menu {
+        display: none;
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        position: absolute;
+        background-color: #000000;
+        top: 0px;
+        z-index: 3;
+        transition: 0.3s;
+    }
+
+    .burger-menu ul {
+        display: block;
+    }
+
+    .burger-menu ul li {
+        margin-bottom: 100px;
+        margin-top: 70px;
+        font-size: 16px;
+        font-family: 'Barlow Condensed';
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+    }
+
+    .burger-menu img {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background-image: url(background-destination-mobile.jpg);
+    }
+
+    .title {
+        display: none;
+    }
+
+    .box-two ul {
+        margin-bottom: 120px;
+    }
+
+    .box-one img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .box-two {
+        grid-row-start: 5;
+        grid-row-end: 10;
+    }
+
+    .details {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 35px;
+    }
+
+    .stats,
+    .numbers {
+        display: none;
+    }
+
+    .statsmobile,
+    .numbersmobile {
+        display: block;
+        text-align: center;
+    }
+    .distance, .travel{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .distancemobile,
+    .travelmobile {
+        font-size: 28px;
+        font-family: 'Bellefair';
+        text-transform: uppercase;
+    }
+    #logo{
+        margin-left: -30px;
+    }
+    #burger{
+        margin-right: 25px;
+
+    }
+}
